@@ -10,9 +10,9 @@ ALG:
 3. from the IVth hash we generate our h_box
 4. the h_box is defined as a matrix of the len (L x L) where L is the digest len
 5. the h_box is populated by the subsequent hashes from a(m),IV -> a(m),(IV+L) 
+
 	5.5 (NOTE: the end state of h_box (IV+L) can be modified by a multiplier or a skip value)
 6. using the byte of the n0 hash corosponding to the line number of the sbox we mod that value with L+1
 7. the value taken from c = n0[x] % L is then used as the value to take from line x of h_box
 8. c is then inserted into the x value of the output paramater
 9. rinse and repeat until your output is filled
-*/
